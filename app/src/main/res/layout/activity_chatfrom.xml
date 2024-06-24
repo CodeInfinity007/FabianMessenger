@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/default_dp_chatto_chatlog"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/def_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textfrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_chatfrom"
+        android:maxWidth="240dp"
+        android:padding="10dp"
+        android:text="Text Message Text Message Text Message Text Message Text Message Text Message"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/default_dp_chatto_chatlog"
+        app:layout_constraintStart_toEndOf="@+id/default_dp_chatto_chatlog"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+<!--    <com.qifan.library.ChatTypingIndicatorView-->
+<!--        android:id="@+id/indicatorView_chatfrom"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:background="@drawable/rounded_chatfrom"-->
+<!--        android:minHeight="36dp"-->
+<!--        android:padding="10dp"-->
+<!--        app:dotSize="8dp"-->
+<!--        app:dotColor = "@color/black"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/default_dp_chatto_chatlog"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/default_dp_chatto_chatlog"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.807" />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/indicatorView_chatfrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/typing_indicator"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintBottom_toBottomOf="@+id/default_dp_chatto_chatlog"
+        app:layout_constraintStart_toEndOf="@+id/default_dp_chatto_chatlog"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+
+<!--    <com.udevel.widgetlab.TypingIndicatorView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/timestamp_chatfrom"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="55dp"-->
+<!--        android:layout_marginBottom="4dp"-->
+<!--        android:text="Delivered  3:00AM"-->
+<!--        android:textSize="10dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/reaction_chatfrom"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="57dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/textfrom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textfrom"
+        app:layout_constraintTop_toTopOf="@+id/textfrom"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

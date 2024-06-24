@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "468291656600",
+    "firebase_url": "https://fabian-messenger-default-rtdb.firebaseio.com",
+    "project_id": "fabian-messenger",
+    "storage_bucket": "fabian-messenger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468291656600:android:69902b8780c91af36ce9ed",
+        "android_client_info": {
+          "package_name": "com.dmat.fabianmessenger1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468291656600-mqgelc4sf81sdvpc1k443a6l3ln3s535.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwL50zAqyLSlOv4FwBnDnem-9Mc2L0tRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468291656600-mqgelc4sf81sdvpc1k443a6l3ln3s535.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
